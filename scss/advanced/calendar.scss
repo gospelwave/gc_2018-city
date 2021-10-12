@@ -1,0 +1,379 @@
+body.page-template-page-calendar {
+    #content {
+        article.title {
+            padding-bottom: 30%;
+
+            div.title {
+                top: 42%;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+        #content {
+            article.title {
+                padding-bottom: 40%;
+
+                div.title {
+                    top: 50%;
+                }
+            }
+        }
+    }
+}
+
+
+article.calendar {
+    padding: 30px;
+    display: block;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    div.title {
+        width: 100%;
+        margin: 10px 0 20px;
+        display: flex;
+
+        h1 {
+            font-family: $radikal-bold;
+            font-size: 2em;
+            line-height: 2em;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            text-align: left;
+        }
+
+        a.go_today {
+            color: $black;
+            font-family: $radikal-bold;
+            text-decoration: none;
+            line-height: 40px;
+            display: inline-block;
+            margin: 0 5px;
+            border: 1px solid $gray5;
+            padding: 0 10px;
+            background-color: lighten($gray6, 6);
+            @include border-radius(3px);
+            transition: all 200ms ease;
+
+            &:hover {
+                background-color: $gray6;
+            }
+
+        }
+
+        div.left,
+        div.center,
+        div.right {
+            display: inline-block;
+            width: 25%;
+        }
+
+        div.left {
+            text-align: left;
+
+            a.go_today::before {
+                content: '<';
+                display: inline-block;
+                padding-right: 5px;
+                line-height: 40px;
+            }
+        }
+
+        div.right {
+            text-align: right;
+
+            a.go_today::after {
+                content: '>';
+                display: inline-block;
+                padding-left: 5px;
+                line-height: 40px;
+            }
+        }
+
+        div.center {
+            width: 50%;
+
+            div.select_week {
+                display: table;
+                margin: 0 auto;
+                border: 1px solid $gray5;
+                height: 40px;
+                @include border-radius(3px);
+
+                a.prev,
+                a.next {
+                    display: inline-block;
+                    height: 100%;
+                    width: 40px;
+                    vertical-align: top;
+                    background-color: lighten($gray6, 6);
+                    text-decoration: none;
+                    transition: all 200ms ease;
+
+                    &:hover {
+                        background-color: $gray6;
+                    }
+
+                    &::before {
+                        color: $gray4;
+                        display: block;
+                        font-size: 30px;
+                        line-height: 40px;
+                        font-family: $radikal-light;
+                        text-align: center;
+                        width: 100%;
+                    }
+
+                }
+
+                a.prev::before {
+                    content: "<";
+                }
+
+                a.next::before {
+                    content: ">";
+                }
+
+                div.week {
+                    display: inline-block;
+                    vertical-align: top;
+                    height: 100%;
+                    border-left: 1px solid $gray5;
+                    border-right: 1px solid $gray5;
+                    background-color: $white;
+
+                    span {
+                        text-align: center;
+                        padding: 0 20px;
+                        vertical-align: middle;
+                        display: inline-block;
+                        line-height: 40px;
+
+                    }
+                }
+            }
+        }
+
+    }
+
+    div.flex {
+        width: 100%;
+        display: flex;
+
+        div.day {
+            display: inline-block;
+            width: 14.3%;
+            vertical-align: top;
+            margin: 4px;
+
+            &.today {
+                div.head {
+                    border-bottom: 4px solid $red;
+                    padding-bottom: 0;
+                }
+            }
+
+            &.weekend {
+                div.head,
+                div.content a.date {
+                    background-color: $gray6;
+                }
+
+                div.content a.date:hover {
+
+                    background-color: $gray5;
+
+                }
+            }
+
+            div.head {
+                font-family: $radikal-bold;
+                background-color: $white;
+                padding: 10px 10px 2px;
+                margin-bottom: 8px;
+                border-bottom: 2px solid $gray4;
+
+                h1 {
+                    text-align: left;
+                    text-transform: uppercase;
+                    font-size: 1.3em;
+                    letter-spacing: 0.06em;
+                    line-height: 1.3em;
+                    padding: 2px 0 0;
+                }
+
+                time {
+                    font-family: $radikal;
+                    font-size: 0.9em;
+                    text-align: left;
+                    display: block;
+                    padding: 5px 0 4px;
+
+                    span {
+                        display: inline-block;
+
+                        &.day {
+                            padding-right: 3px;
+                        }
+
+                        &.month {
+
+                        }
+
+                        &.month_short {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            div.content {
+
+                a.date {
+                    padding: 15px 10px;
+                    background-color: $white;
+                    margin-bottom: 8px;
+                    color: $black;
+                    text-decoration: none;
+                    display: block;
+                    transition: all 200ms ease;
+
+                    &.multi {
+                        padding-top: 5px;
+                        padding-bottom: 3px;
+                    }
+
+                    &:hover {
+                        background-color: $gray6;
+                    }
+
+                    h1 {
+                        font-family: $radikal-bold;
+                        padding: 3px 0 5px;
+                        letter-spacing: 0.02em;
+                        font-size: 1.1em;
+                        line-height: 1.2em;
+                    }
+
+                    time {
+                        color: $gray;
+                        //text-transform: uppercase;
+                        font-size: 0.9em;
+                        padding: 3px 0;
+                        letter-spacing: 0.06em;
+                    }
+
+                }
+
+            }
+        }
+    }
+
+    @media only screen and (max-width: 900px) {
+
+        padding: 20px 10px;
+
+        div.flex {
+            div.day {
+                div.head {
+                    time {
+                        span.month {
+                            display: none;
+                        }
+
+                        span.month_short {
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 640px) {
+
+        padding: 20px 3% 10px;
+
+        div.title {
+            display: block;
+
+            div.left,
+            div.center,
+            div.right {
+                display: block;
+                width: 100%;
+                margin: 10px 0;
+                text-align: center;
+            }
+
+        }
+
+        div.flex {
+            display: block;
+
+            div.day {
+                display: block;
+                width: 100%;
+                margin: 0 0 10px 0;
+                border-bottom: 1px solid $gray6;
+                background-color: $white;
+
+                &.today {
+
+                    div.head {
+                        border-bottom: none;
+                        border-left: 3px solid $red;
+                        padding: 10px 2%;
+                    }
+                }
+
+                &.weekend {
+                    div.head,
+                    div.content a.date {
+                        background-color: $white;
+                    }
+                }
+
+                div.head {
+                    border-bottom: none;
+                    margin: 0;
+                    padding: 10px 2%;
+                    border-left: 3px solid $white;
+
+                    h1 {
+                        display: inline-block;
+                        font-size: 1em;
+                        padding: 0;
+                        margin-right: 4px;
+                    }
+
+                    time {
+                        display: inline-block;
+                        padding: 0;
+
+                        span.month {
+                            display: inline-block;
+                        }
+
+                        span.month_short {
+                            display: none
+                        }
+                    }
+
+                }
+
+                div.content {
+                    margin-left: 4%;
+
+                    a.date {
+                        border-top: 1px solid $gray6;
+                        padding: 10px 3px;
+                    }
+                }
+            }
+        }
+    }
+
+
+}

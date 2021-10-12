@@ -1,0 +1,121 @@
+ul.category_filter {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: auto;
+    vertical-align: top;
+    left: 0;
+    right: 0;
+    position: absolute;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+    text-align: center;
+
+    li {
+        display: inline-block;
+        margin-right: 5px;
+
+        &.current a {
+            div.round .image {
+                filter: saturate(1) brightness(110%) contrast(110%) grayscale(0);
+                -webkit-filter: saturate(1) brightness(110%) contrast(110%) grayscale(0);
+            }
+
+            div.name {
+                color: $black;
+            }
+
+        }
+
+        &.not_current a div.round .image {
+            filter: saturate(0.9) brightness(132%) contrast(80%) grayscale(1);
+            -webkit-filter: saturate(0.9) brightness(132%) contrast(80%) grayscale(1);
+        }
+
+        a {
+            display: block;
+            color: $gray;
+            text-decoration: none;
+
+            &:hover {
+                div.round {
+
+                    span {
+                        &::before {
+                            width: 90%;
+                            transition: all 0ms ease-in-out 150ms;
+                        }
+
+                        &::after {
+                            width: 90%;
+                            transition: all 150ms ease-in-out 0s;
+                        }
+                    }
+                }
+            }
+
+            div.round {
+                width: 58px;
+                height: 58px;
+                @include border-radius(29px);
+                margin: 0 5px;
+                position: relative;
+
+                .image {
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    filter: saturate(1) brightness(90%) contrast(110%) grayscale(0);
+                    -webkit-filter: saturate(1) brightness(90%) contrast(110%) grayscale(0);
+                    width: 100%;
+                    height: 100%;
+                    @include border-radius(29px);
+                    position: absolute;
+                }
+
+                span {
+                    color: $white;
+                    text-transform: uppercase;
+                    line-height: 58px;
+                    text-align: center;
+                    position: relative;
+                    padding: 0 3px;
+                    display: inline-block;
+                    font-family: $radikal-bold;
+                    font-size: 1.3em;
+                    letter-spacing: 0.1em;
+                    filter: saturate(1) brightness(100%) contrast(100%);
+                    -webkit-filter: saturate(1) brightness(100%) contrast(100%);
+                    text-shadow: 0 0 6px rgba(black, 0.3);
+
+                    &::before,
+                    &::after {
+                        height: 3px;
+                        background-color: $white;
+                        width: 0;
+                        position: absolute;
+                        bottom: 30%;
+                        content: "";
+                    }
+
+                    &::before {
+                        right: 5%;
+                        transition: all 150ms ease-in-out 150ms;
+                    }
+
+                    &::after {
+                        left: 5%;
+                        transition: all 0ms ease-in-out 0s;
+                    }
+                }
+            }
+
+            div.name {
+                font-size: 0.63em;
+                text-align: center;
+                padding-top: 4px;
+            }
+        }
+    }
+}

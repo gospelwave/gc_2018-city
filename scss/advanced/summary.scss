@@ -1,0 +1,254 @@
+#content .platter#summary {
+    background-color: $white;
+
+    article.content-page,
+    section.content-default {
+        min-height: inherit;
+        padding: 0 40px;
+        margin: 0 auto;
+        max-width: 1400px;
+
+        .content {
+            padding: 40px 0 0;
+        }
+
+    }
+
+    section.sections {
+        margin: 0 auto;
+        max-width: 1400px;
+        padding-top: 60px;
+
+        :nth-child(even) {
+            .pic,
+            .video {
+                float: left;
+            }
+        }
+
+        article {
+            background-color: $gray-light;
+            margin-bottom: 30px;
+            padding: 25px;
+            position: relative;
+            overflow: hidden;
+            display: table;
+            vertical-align: middle;
+            width: calc(100% - 50px);
+
+            .content,
+            .pic,
+            .video {
+                display: inline-block;
+                position: relative;
+                vertical-align: text-bottom;
+            }
+
+            .content {
+                width: 43%;
+                float: left;
+
+                .txt {
+                    padding: 30px 100px 30px 40px;
+
+                }
+
+                h2 {
+                    font-family: $radikal-black;
+                    font-size: 2.4em;
+                    letter-spacing: 0.03em;
+                    line-height: 1.2em;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    font-family: $corbel;
+                    line-height: 1.4em;
+                    font-size: 1.4em;
+                    letter-spacing: 0.05em;
+                    margin: 10px 0 20px;
+                    color: $gray2;
+                    text-align: justify;
+                }
+
+                a.dynamic {
+                    font-family: $radikal-bold;
+                    font-size: 1em;
+                    line-height: 2.5em;
+                    text-transform: uppercase;
+                    letter-spacing: 0.18em;
+                    color: $gray3;
+                    display: inline-block;
+                    position: relative;
+                    margin: 10px 0;
+                    padding-left: 13px;
+                    transition: all 100ms ease;
+                    padding-right: 8px;
+                    text-decoration: none;
+
+                    &::before {
+                        content: '';
+                        height: 50%;
+                        width: 2px;
+                        bottom: 0;
+                        left: 0;
+                        background-color: $gray4;
+                        display: block;
+                        position: absolute;
+                        transition: all 100ms ease;
+                    }
+
+                    &::after {
+                        content: '';
+                        height: 2px;
+                        width: 50%;
+                        background-color: $gray4;
+                        display: block;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        transition: all 250ms ease;
+                    }
+
+                    &:hover {
+                        &::before {
+                            height: 100%;
+                            background-color: $gray2;
+                        }
+
+                        &::after {
+                            width: 100%;
+                            background-color: $gray2;
+                        }
+                    }
+                }
+            }
+
+            .pic {
+                width: 57%;
+                float: right;
+
+                .image {
+                    width: 100%;
+                    padding-bottom: 56.2%;
+                    position: relative;
+                    background-repeat: no-repeat;
+                    display: block;
+                    background-size: cover;
+                }
+            }
+
+            .video {
+                width: 57%;
+                float: right;
+
+                .player {
+                    width: 100%;
+                    position: relative;
+                    display: block;
+                    max-width: 1200px;
+                    margin: 0 auto;
+
+                    .container {
+                        height: 0;
+                        padding-bottom: 56.25%;
+                        width: 100%;
+                        margin: 0 auto;
+                        position: relative;
+
+                        iframe {
+                            margin: 0 auto;
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    @media only screen and (max-width: 1540px) {
+
+        section.sections {
+            padding-top: 30px;
+        }
+    }
+
+    @media only screen and (max-width: 1450px) {
+
+        section.sections {
+            padding-top: 0;
+        }
+    }
+
+    @media only screen and (max-width: 1200px) {
+
+        section.sections {
+
+            article {
+                .content {
+                    width: 50%;
+
+                    .txt {
+                        padding: 30px 40px;
+                    }
+                }
+
+                .pic,
+                .video {
+                    width: 50%;
+                }
+            }
+        }
+
+    }
+
+    @media only screen and (max-width: 900px) {
+
+        section.sections {
+            article {
+                .content {
+                    width: 100%;
+
+                    .txt {
+                        padding: 40px 0 20px;
+
+                        h2 {
+                            font-size: 1.5em;
+                        }
+
+                        p {
+                            font-size: 1.1em;
+                            line-height: 1.3em;
+                            letter-spacing: 0.04em;
+                        }
+
+                        a.dynamic {
+                            font-size: 0.8em;
+                        }
+                    }
+                }
+
+                .pic,
+                .video {
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+
+    // Smartphone
+    @media only screen and (max-width: 380px) {
+
+        section.sections {
+            article {
+                padding: 12px;
+                width: calc(100% - 24px);
+            }
+        }
+    }
+}

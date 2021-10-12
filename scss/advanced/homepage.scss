@@ -1,0 +1,605 @@
+body.page-template-page-home {
+
+    #content {
+        article.title {
+            padding-bottom: 100vh;
+
+            div.title {
+                top: 50%;
+                opacity: 0;
+
+                animation: fadein 1s ease-in 0.7s;
+                -moz-animation: fadein 1s ease-in 0.7s;
+                -webkit-animation: fadein 1s ease-in 0.7s;
+                -o-animation: fadein 1s ease-in 0.7s;
+
+                animation-fill-mode: forwards;
+                -moz-animation-fill-mode: forwards;
+                -webkit-animation-fill-mode: forwards;
+                -o-animation-fill-mode: forwards;
+
+                div.buttons {
+                    margin-top: 50px;
+
+                    a {
+                        margin: 0 20px;
+                    }
+                }
+
+
+            }
+
+            .footer {
+                bottom: 12px;
+                position: absolute;
+                z-index: 100;
+                text-align: center;
+                width: 100%;
+
+                opacity: 0;
+
+                animation: fadein 1s ease-in 2s;
+                -moz-animation: fadein 1s ease-in 2s;
+                -webkit-animation: fadein 1s ease-in 2s;
+                -o-animation: fadein 1s ease-in 2s;
+
+                animation-fill-mode: forwards;
+                -moz-animation-fill-mode: forwards;
+                -webkit-animation-fill-mode: forwards;
+                -o-animation-fill-mode: forwards;
+
+                a {
+                    color: $white;
+                    display: inline-block;
+                    width: 17px;
+                    height: 27px;
+                    background-image: url('images/arrow_down.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    opacity: 0.7;
+                }
+            }
+
+            &.alert-banner {
+                padding-bottom: 95vh;
+
+                .footer {
+                    display: none;
+                }
+            }
+        }
+
+        .platter {
+            top: 0;
+            margin: 0;
+            background-color: $white;
+
+            article {
+                &.home-default {
+                    text-align: center;
+                    padding: 90px 0;
+                    margin: 0 20px;
+                }
+
+                & > h1.title {
+                    font-size: 2.4em;
+                }
+
+                & > h4 {
+                    font-size: 1.4em;
+                    color: $gray3;
+                    letter-spacing: 0.06em;
+                    max-width: 680px;
+                    margin: 0 auto;
+                    line-height: 1.4em;
+                    width: 80%;
+                    //font-family: $radikal-light;
+                }
+
+                &#alert-banner {
+                    background-color: $red;
+                    bottom: 0;
+                    position: relative;
+                    margin: 0 20px -10vh;
+                    width: auto;
+                    top: -10vh;
+                    z-index: 200;
+
+                    a.container {
+                        max-width: 760px;
+                        margin: 0 auto;
+                        width: auto;
+                        padding: 30px;
+                        color: $white;
+                        text-decoration: none;
+                        display: block;
+                        transition: all 150ms ease;
+
+                        &::before {
+                            content: '';
+                            height: 0%;
+                            width: 5px;
+                            top: 0;
+                            left: 0;
+                            background-color: $white;
+                            display: block;
+                            position: absolute;
+                            transition: all 150ms ease;
+                        }
+
+                        &::after {
+                            content: '';
+                            height: 5px;
+                            width: 0%;
+                            background-color: $white;
+                            display: block;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            transition: all 300ms ease;
+                        }
+
+                        &:hover {
+                            &::before {
+                                height: 100%;
+                                background-color: $white;
+                            }
+
+                            &::after {
+                                width: 100%;
+                                background-color: $white;
+                            }
+                        }
+
+                        h1 {
+                            text-align: center;
+                            font-family: $radikal-bold;
+                            margin: 10px 0 5px;
+                            text-transform: uppercase;
+                            letter-spacing: 0.06em;
+                            font-size: 1.4em;
+                            line-height: 1.2em;
+                        }
+
+                        p {
+                            text-align: center;
+                            font-family: $corbel;
+                            line-height: 1.5em;
+                            font-size: 1.2em;
+                            letter-spacing: 0.062em;
+                            margin: 20px 0 30px;
+                        }
+                    }
+                }
+
+                &#events {
+                    background-color: $gray-light;
+
+                    #listOfEvents .events_table {
+                        width: 90%;
+                        padding: 20px 0 50px;
+                    }
+
+                    & > a {
+                        margin: 5px 20px;
+                    }
+
+
+                }
+
+                &#gcfamily {
+
+                    ul.dynamic {
+                        text-align: left;
+                        margin: 60px auto 30px;
+                        max-width: 1200px;
+
+                        li {
+                            width: 29.333%;
+                            text-align: center;
+                            margin: 20px 2%;
+
+                            h1 {
+                                font-family: $radikal-black;
+                                color: $gray3;
+                                text-transform: uppercase;
+                                margin-bottom: 5px;
+                            }
+
+                            h2 {
+                                color: $gray3;
+                                font-size: 1em;
+                            }
+                        }
+                    }
+                }
+
+                &#next_step {
+                    background-color: $gray-light;
+
+                    & > h4 {
+                        color: $gray;
+                    }
+
+                    ul.wall_image {
+                        margin: 90px 0 40px;
+                        left: -20px;
+                        width: 100vw;
+                    }
+
+                }
+
+                &#tv {
+                    background-color: $gray-light;
+                    margin: 20px;
+
+                    .talks {
+                        margin-bottom: 20px;
+                        display: table;
+                        width: 98%;
+                        padding: 0 1%;
+
+                        @media only screen and (max-width: 680px) {
+
+                            text-align: left;
+
+                        }
+                    }
+
+                    .talk_item {
+                        display: inline-block;
+                        width: 15.7%;
+                        vertical-align: top;
+
+                        .talk_container {
+                            background-color: $white;
+                            margin: 0 0.4% 15px;
+                            border: 1px solid $gray6;
+                            @include border-radius(3px);
+                            white-space: normal;
+                            text-decoration: none;
+                            display: block;
+
+                            .image {
+                                width: 100%;
+                                height: 0;
+                                padding-bottom: 56.2%;
+                                position: relative;
+
+                                .bg {
+                                    width: 100%;
+                                    height: 100%;
+                                    position: absolute;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    background-position: center;
+                                    background-color: $gray5;
+
+                                }
+                            }
+
+                            .text {
+                                display: block;
+                                padding: 10px;
+                                text-align: left;
+
+                                h1 {
+                                    padding-bottom: 5px;
+                                    line-height: 1.3em;
+                                    font-size: 1em;
+                                    letter-spacing: 0;
+                                    font-family: $radikal;
+                                    color: $gray-dark;
+                                    text-transform: inherit;
+                                    margin: 0;
+
+                                }
+
+                                time {
+                                    margin: 0;
+                                    line-height: 1em;
+                                    font-size: 0.8em;
+                                    letter-spacing: 0;
+                                    font-family: $radikal;
+                                    color: $gray-dark;
+                                    text-transform: inherit;
+                                }
+                            }
+                        }
+
+                        @media only screen and (max-width: 1600px) {
+
+                            width: 18.8%;
+
+                        }
+
+                        @media only screen and (max-width: 1300px) {
+
+                            width: 23%;
+
+                        }
+
+                        @media only screen and (max-width: 900px) {
+
+                            width: 40%;
+
+                        }
+
+                        @media only screen and (max-width: 680px) {
+
+                            width: 50%;
+
+                        }
+
+                    }
+
+                }
+
+                &#church_life {
+                    max-width: 1200px;
+                    margin: 40px auto;
+                    display: table;
+                    width: 100%;
+
+                    div {
+                        display: inline-block;
+                        width: 50%;
+                        vertical-align: middle;
+
+                        h1 {
+                            text-transform: inherit;
+                            font-family: $radikal-black;
+                            letter-spacing: 0.07em;
+                            font-size: 2.2em;
+                        }
+
+                        p {
+                            text-align: center;
+
+                            a {
+                                display: inline-block;
+                                border: 3px solid $gray;
+                                color: $gray;
+                                font-family: $radikal-bold;
+                                font-size: 1.3em;
+                                line-height: 1.8em;
+                                text-transform: uppercase;
+                                padding: 5px 25px 2px;
+                                transition: all 300ms ease;
+
+                                &:hover {
+                                    color: $gray-dark;
+                                    border-color: $gray-dark;
+                                }
+                            }
+
+                        }
+
+                    }
+                }
+
+                &#news {
+                    background-color: $gray3;
+
+                    h1 {
+                        color: $white;
+                        line-height: 0.9em;
+                        font-family: $radikal-black;
+                    }
+
+                    em {
+                        color: $white;
+                    }
+
+                    div.form {
+                        text-align: center;
+
+                        form {
+                            text-align: center;
+                            display: inline-block;
+                            position: relative;
+                            margin: 0 auto;
+                            width: 90%;
+
+                            div {
+                                text-align: center;
+
+                                p {
+                                    color: $gray6;
+                                    text-align: center;
+                                    font-size: 0.9em;
+                                    font-family: $radikal;
+                                }
+                            }
+
+                            & > div:first-of-type {
+                                display: table;
+                                text-align: center;
+                                width: 100%;
+
+                                input {
+                                    background-color: $white;
+                                    outline: none;
+                                    border: none;
+                                    line-height: 1.4em;
+                                    padding: 9px 25px 9px;
+                                    vertical-align: top;
+                                    font-size: 1.2em;
+                                    font-family: $radikal;
+                                    box-sizing: border-box;
+                                    display: inline-block;
+                                    appearance: none;
+                                    -webkit-appearance: none;
+                                    -moz-appearance: none;
+                                    border-radius: 0;
+                                    color: $gray-dark;
+                                    text-align: left;
+                                    margin: 10px 0;
+
+                                    &[type="submit"] {
+                                        vertical-align: top;
+                                        background-color: $red;
+                                        border: none;
+                                        outline: none;
+                                        color: $white;
+                                        padding: 9px 25px 9px;
+                                        font-family: $radikal-bold;
+                                        text-transform: uppercase;
+                                        letter-spacing: 0.04em;
+                                        line-height: 1.4em;
+                                        cursor: pointer;
+                                        appearance: none;
+                                        -webkit-appearance: none;
+                                        -moz-appearance: none;
+                                        min-width: 110px;
+                                        transition: all 300ms ease;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+
+                        }
+
+                        @media only screen and (max-width: 400px) {
+                            form {
+                                div {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 940px) {
+
+            .platter {
+                article {
+                    &#events {
+
+                        #listOfEvents .events_table {
+                            width: 100%;
+                            text-align: left;
+                        }
+                    }
+
+                    &#gcfamily {
+                        ul.dynamic {
+                            li {
+                                width: 44%;
+                                margin: 30px 3%;
+                            }
+                        }
+                    }
+
+                    &#next_step {
+
+                    }
+                }
+            }
+
+        }
+
+        @media only screen and (max-width: 600px) {
+
+            .platter {
+
+                article {
+
+                    &.home-default {
+                        padding: 50px 0;
+                        margin: 0 10px;
+
+                        h1 {
+                            margin: 40px auto;
+                            width: 85%;
+                        }
+                    }
+
+                    &#events {
+
+                        #listOfEvents .events_table {
+
+                        }
+                    }
+
+                    &#gcfamily {
+                        ul.dynamic {
+                            li {
+                                //width: 80%;
+                                margin: 20px 3%;
+
+                                a {
+                                    margin-right: 0;
+                                    padding: 15px;
+
+                                    h1 {
+                                        font-size: 1.1em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &#next_step {
+
+                        ul.wall_image {
+
+                            left: -10px;
+
+                        }
+
+                    }
+
+                    &#church_life {
+                        display: block;
+
+                        div {
+                            display: block;
+                            width: 100%;
+
+                            p {
+                                display: inline-block;
+                                margin: 20px 10px;
+                            }
+                        }
+                    }
+
+                    &#tv {
+                        margin: 10px;
+                    }
+                }
+            }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+
+            article.title {
+                padding-bottom: 90vh;
+
+                .footer {
+                    display: none;
+                }
+            }
+
+            .platter {
+
+                article {
+
+                    &.home-default {
+
+                        h1 {
+                            font-size: 1.6em;
+                        }
+                    }
+
+                }
+            }
+
+        }
+
+    }
+
+}

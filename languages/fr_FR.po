@@ -1,0 +1,348 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Gospel Center City 2018\n"
+"POT-Creation-Date: 2018-08-07 17:25+0200\n"
+"PO-Revision-Date: 2018-08-07 17:26+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/acf/location.php:7 includes/gc_location.php:11
+#: template-parts/event/event.php:155
+msgid "Location"
+msgstr "Lieu"
+
+#: includes/acf/location.php:11 includes/gc_location.php:84
+msgid "Name"
+msgstr "Nom"
+
+#: includes/acf/location.php:30
+msgid "Address"
+msgstr "Adresse"
+
+#: includes/acf/location.php:49 includes/gc_location.php:85
+msgid "City"
+msgstr "Ville"
+
+#: includes/acf/location.php:68
+msgid "Zip code"
+msgstr "Code postal"
+
+#: includes/acf/location.php:87 includes/gc_location.php:86
+msgid "Country"
+msgstr "Pays"
+
+#: includes/gc_event.php:10 page-home.php:72 template-parts/event/list.php:29
+#: template-parts/event/list.php:36
+msgid "Events"
+msgstr "Événements"
+
+#: includes/gc_event.php:11
+msgid "Event"
+msgstr "Événement"
+
+#: includes/gc_event.php:12
+msgid "Add an event"
+msgstr "Ajouter un événement"
+
+#: includes/gc_event.php:13
+msgid "All events"
+msgstr "Tous les événements"
+
+#: includes/gc_event.php:14
+msgid "Add New Event"
+msgstr "Ajouter un nouvel événement"
+
+#: includes/gc_event.php:15
+msgid "Edit Event"
+msgstr "Modifier l’événement"
+
+#: includes/gc_event.php:48
+msgctxt "taxonomy general name"
+msgid "Event categories"
+msgstr "Catégories d’événement"
+
+#: includes/gc_event.php:49
+msgctxt "taxonomy singular name"
+msgid "Event category"
+msgstr "Catégorie de l'événement"
+
+#: includes/gc_event.php:50
+msgid "Search Categories"
+msgstr "Chercher catégories"
+
+#: includes/gc_event.php:51
+msgid "Popular Categories"
+msgstr "Catégories populaires"
+
+#: includes/gc_event.php:52
+msgid "All event categories"
+msgstr "Toutes les catégories d’événements"
+
+#: includes/gc_event.php:55
+msgid "Edit Category"
+msgstr "Modifier la catégorie"
+
+#: includes/gc_event.php:56
+msgid "Update Category"
+msgstr "Mettre à jour la catégorie"
+
+#: includes/gc_event.php:57
+msgid "Add New Category"
+msgstr "Ajouter une nouvelle catégorie"
+
+#: includes/gc_event.php:58
+msgid "New Category Name"
+msgstr "Nom de la nouvelle catégorie"
+
+#: includes/gc_event.php:59
+msgid "Separate categories with commas"
+msgstr "Séparer les catégories avec des virgules"
+
+#: includes/gc_event.php:60
+msgid "Add or remove categories"
+msgstr "Ajouter ou supprimer des catégories"
+
+#: includes/gc_event.php:61
+msgid "Choose from the most used categories"
+msgstr "Choisissez parmi les catégories les plus utilisées"
+
+#: includes/gc_event.php:65
+msgid "Event Category"
+msgstr "Catégorie de l’événement"
+
+#: includes/gc_event.php:252
+msgid "Title"
+msgstr "Titre"
+
+#: includes/gc_event.php:253 includes/gc_service.php:146
+msgid "Date"
+msgstr "Date"
+
+#: includes/gc_event.php:254 includes/gc_service.php:147
+msgid "Time"
+msgstr "Heure"
+
+#: includes/gc_event.php:255
+msgid "Category"
+msgstr "Catégorie"
+
+#: includes/gc_location.php:10
+msgid "Locations"
+msgstr "Lieux"
+
+#: includes/gc_location.php:12
+msgid "Add a location"
+msgstr "Ajouter un lieu"
+
+#: includes/gc_location.php:13
+msgid "All locations"
+msgstr "Tous les lieux"
+
+#: includes/gc_location.php:14
+msgid "Add New Location"
+msgstr "Ajouter un nouveau lieu"
+
+#: includes/gc_location.php:15
+msgid "Edit the location"
+msgstr "Modifier le lieu"
+
+#: includes/gc_service.php:10
+msgid "Services"
+msgstr "Services"
+
+#: includes/gc_service.php:11
+msgid "Service"
+msgstr "Service"
+
+#: includes/gc_service.php:12
+msgid "Add a service"
+msgstr "Ajouter un service"
+
+#: includes/gc_service.php:13
+msgid "All services"
+msgstr "Tous les services"
+
+#: includes/gc_service.php:14
+msgid "Add New Service"
+msgstr "Ajouter un nouveau service"
+
+#: includes/gc_service.php:15
+msgid "Edit Service"
+msgstr "Modifier le service"
+
+#: includes/gc_service.php:48
+msgctxt "taxonomy general name"
+msgid "Service types"
+msgstr "Types de service"
+
+#: includes/gc_service.php:49
+msgctxt "taxonomy singular name"
+msgid "Service type"
+msgstr "Type de service"
+
+#: includes/gc_service.php:50
+msgid "Search Service Type"
+msgstr "Chercher type de service"
+
+#: includes/gc_service.php:51
+msgid "Popular Service Types"
+msgstr "Types de services populaires"
+
+#: includes/gc_service.php:52
+msgid "All Service types"
+msgstr "Tous les types de service"
+
+#: includes/gc_service.php:55
+msgid "Edit Type"
+msgstr "Modifier le type"
+
+#: includes/gc_service.php:56
+msgid "Update Type"
+msgstr "Mettre à jour le type"
+
+#: includes/gc_service.php:57
+msgid "Add New Service Type"
+msgstr "Ajouter un nouveau type de service"
+
+#: includes/gc_service.php:58
+msgid "New Service Type"
+msgstr "Nouveau type de service"
+
+#: includes/gc_service.php:59
+msgid "Separate services with commas"
+msgstr "Séparer les mots-clés de Services par des virgules"
+
+#: includes/gc_service.php:60
+msgid "Add or remove services"
+msgstr "Ajouter ou supprimer des services"
+
+#: includes/gc_service.php:61
+msgid "Choose from the most used services"
+msgstr "Choisissez parmi les catégories de Services les plus utilisées"
+
+#: includes/gc_service.php:65
+msgid "Service Type"
+msgstr "Type de Service"
+
+#: includes/gc_service.php:148
+msgid "Speaker"
+msgstr "Orateur"
+
+#: options.php:14 options.php:15
+msgid "Recurrence"
+msgstr "Récurrence"
+
+#: page-home.php:89
+msgid "More events"
+msgstr "Plus d'événements"
+
+#: page-weekend.php:258
+msgid "There is no event this weekend"
+msgstr "Il n'y a pas d'événement ce week-end"
+
+#: template-parts/event/event.php:105
+msgid "Back"
+msgstr "Retour"
+
+#: template-parts/event/event.php:134
+msgid "descover"
+msgstr "decouvrir"
+
+#: template-parts/event/event.php:159
+msgid "get directions"
+msgstr "obtenir l'itinéraire"
+
+#: template-parts/event/event.php:173
+msgid "add to calendar"
+msgstr "ajouter au calendrier"
+
+#: template-parts/event/event.php:262
+msgid "next dates to come"
+msgstr "prochaines dates à venir"
+
+#: template-parts/event/item.php:38 template-parts/event/list.php:103
+#: template-parts/event/main_events.php:45
+msgid "Learn more"
+msgstr "En savoir plus"
+
+#: template-parts/event/list.php:94
+msgid "Special event"
+msgstr "Événement spécial"
+
+#: template-parts/event/list.php:138
+msgid "Next events"
+msgstr "Événements à venir"
+
+#: template-parts/event/list.php:324
+msgid "Previous"
+msgstr "Précédent"
+
+#: template-parts/event/list.php:325
+msgid "Next"
+msgstr "Suivant"
+
+#: template-parts/event/none.php:3
+msgid "There is no event"
+msgstr "Il n’y a pas d'événement"
+
+#: template-parts/event/related_events.php:38
+msgid "Don't miss these events"
+msgstr "Des événements à ne pas manquer"
+
+#. Theme Name of the plugin/theme
+msgid "Gospel Center City 2018"
+msgstr "Gospel Center City 2018"
+
+#. Theme URI of the plugin/theme
+msgid "http://gospel-center.org"
+msgstr "http://gospel-center.org"
+
+#. Description of the plugin/theme
+msgid "Template for Gospel Center City 2018"
+msgstr "Template pour Gospel Center City 2018"
+
+#. Author of the plugin/theme
+msgid "Yoann Gern"
+msgstr "Yoann Gern"
+
+#. Author URI of the plugin/theme
+msgid "http://gerny-media.ch"
+msgstr "http://gerny-media.ch"
+
+#. Template Name of the plugin/theme
+msgid "Calendar */ ?>"
+msgstr "Calendrier"
+
+#. Template Name of the plugin/theme
+msgid "Summary */ ?>"
+msgstr "Résumé"
+
+#. Template Name of the plugin/theme
+msgid "Team */ ?>"
+msgstr "Équipe"
+
+#. Template Name of the plugin/theme
+msgid "Homepage */ ?>"
+msgstr "Page d'accueil"
+
+#. Template Name of the plugin/theme
+msgid "Weekend */ ?>"
+msgstr "Weekend"
+
+#~ msgid "Test EN"
+#~ msgstr "Test FR"

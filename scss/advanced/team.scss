@@ -1,0 +1,233 @@
+body.page-template-page-team {
+    #content {
+        div.platter {
+            article.content-page {
+                max-width: 809px;
+                padding-left: 20px;
+                padding-right: 20px;
+                margin: 0 auto;
+            }
+
+            section.teams {
+                max-width: 1200px;
+                padding-left: 20px;
+                padding-right: 20px;
+                margin: 0 auto;
+                padding-bottom: 40px;
+
+                .team {
+                    display: table;
+                    width: 100%;
+                    margin: 0 auto 20px;
+
+                    h2 {
+                        font-size: 1.2em;
+                        line-height: 2.5em;
+                        font-family: $radikal-black;
+                        text-transform: uppercase;
+                        margin: 10px 1% 10px;
+                        letter-spacing: 0.13em;
+                    }
+
+                    &.show-bio {
+                        .member {
+                            width: 100%;
+
+                            &.has-bio .image {
+                                cursor: inherit;
+                            }
+
+                            .left {
+                                float: left;
+                                width: 48%;
+                                margin: 0 4% 5px 0;
+                                max-width: 400px;
+                            }
+
+                            .txt {
+                                max-width: 960px;
+
+                                h3 {
+                                    font-family: $radikal-bold;
+                                    color: $black;
+                                    letter-spacing: 0.06em;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                }
+
+                                div.bio {
+                                    display: block;
+                                    position: relative;
+                                    background: transparent;
+                                    top: inherit;
+                                    right: inherit;
+                                    box-shadow: none;
+                                    width: auto;
+                                    max-width: 960px;
+                                    margin: 0;
+                                    padding: 0;
+
+                                    .close {
+                                        display: none;
+                                    }
+
+                                    h4 {
+                                        display: none;
+                                    }
+
+
+                                }
+                            }
+                        }
+                    }
+
+                    .member {
+                        width: 23%;
+                        display: inline-block;
+                        vertical-align: top;
+                        margin: 0 1% 15px;
+
+                        &.has-bio .image {
+                            cursor: pointer;
+                        }
+
+                        .image {
+                            padding-bottom: 70%;
+                            width: 100%;
+                            height: 0;
+                            position: relative;
+
+                            .bg {
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                                z-index: 0;
+                                background-color: $gray4;
+                            }
+                        }
+
+                        .txt {
+                            margin: 10px 0;
+
+                            h3 {
+                                margin: 0;
+                                font-size: 1em;
+                                line-height: 1.2em;
+                                letter-spacing: 0.03em;
+                                color: $gray;
+                                padding-bottom: 5px;
+
+                            }
+
+                            .bio {
+                                display: block;
+                                position: fixed;
+                                z-index: 1000;
+                                background-color: $white;
+                                width: 80%;
+                                height: 100%;
+                                top: 0;
+                                right: -150%;
+                                padding: 90px 40px 50px;
+                                transition: right 300ms ease-in-out;
+                                box-shadow: 2px 2px 10px $black;
+                                color: $gray2;
+                                font-size: 1em;
+                                line-height: 1.3em;
+                                letter-spacing: 0.04em;
+                                font-family: $corbel;
+                                max-width: 540px;
+
+                                h4 {
+                                    font-family: $radikal-bold;
+                                    color: $black;
+                                    letter-spacing: 0.06em;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                }
+
+                                .close {
+                                    margin: 20px 10px 0 0;
+                                    width: 28px;
+                                    height: 22px;
+                                    display: block;
+                                    cursor: pointer;
+                                    z-index: 1100;
+                                    position: absolute;
+                                    right: 0;
+                                    top: 0;
+
+                                    span {
+                                        display: block;
+                                        position: absolute;
+                                        height: 2px;
+                                        width: 100%;
+                                        background: $black;
+                                        opacity: 1;
+                                        right: 0;
+                                        z-index: 200;
+
+                                        &:first-of-type {
+                                            -webkit-transform: rotate(-45deg);
+                                            -moz-transform: rotate(-45deg);
+                                            -o-transform: rotate(-45deg);
+                                            transform: rotate(-45deg);
+                                            left: 0;
+                                        }
+
+                                        &:last-of-type {
+                                            -webkit-transform: rotate(45deg);
+                                            -moz-transform: rotate(45deg);
+                                            -o-transform: rotate(45deg);
+                                            transform: rotate(45deg);
+                                            right: 0;
+                                        }
+
+                                    }
+                                }
+
+
+                                &.show {
+                                    display: block;
+                                    right: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                @media only screen and (max-width: 900px) {
+                    .team {
+                        .member {
+                            width: 31%;
+                        }
+                    }
+                }
+
+                @media only screen and (max-width: 670px) {
+                    .team {
+                        .member {
+                            .txt .bio .close {
+                                margin-top: 60px;
+                            }
+                        }
+                    }
+                }
+
+
+                @media only screen and (max-width: 540px) {
+                    .team {
+                        .member {
+                            width: 48%;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

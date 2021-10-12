@@ -1,0 +1,226 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Gospel Center City 2018\n"
+"POT-Creation-Date: 2018-08-07 16:54+0200\n"
+"PO-Revision-Date: 2018-08-07 16:54+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/gc_event.php:10 page-home.php:72
+msgid "Events"
+msgstr ""
+
+#: includes/gc_event.php:11
+msgid "Event"
+msgstr ""
+
+#: includes/gc_event.php:48
+msgctxt "taxonomy general name"
+msgid "Event categories"
+msgstr ""
+
+#: includes/gc_event.php:49
+msgctxt "taxonomy singular name"
+msgid "Event category"
+msgstr ""
+
+#: includes/gc_event.php:50
+msgid "Search Categories"
+msgstr ""
+
+#: includes/gc_event.php:51
+msgid "Popular Categories"
+msgstr ""
+
+#: includes/gc_event.php:52
+msgid "All event categories"
+msgstr ""
+
+#: includes/gc_event.php:55
+msgid "Edit Category"
+msgstr ""
+
+#: includes/gc_event.php:56
+msgid "Update Category"
+msgstr ""
+
+#: includes/gc_event.php:57
+msgid "Add New Category"
+msgstr ""
+
+#: includes/gc_event.php:58
+msgid "New Category Name"
+msgstr ""
+
+#: includes/gc_event.php:59
+msgid "Separate categories with commas"
+msgstr ""
+
+#: includes/gc_event.php:60
+msgid "Add or remove categories"
+msgstr ""
+
+#: includes/gc_event.php:61
+msgid "Choose from the most used categories"
+msgstr ""
+
+#: includes/gc_event.php:65
+msgid "Event Category"
+msgstr ""
+
+#: includes/gc_location.php:10
+msgid "Locations"
+msgstr ""
+
+#: includes/gc_location.php:11 template-parts/event/event.php:155
+msgid "Location"
+msgstr ""
+
+#: includes/gc_service.php:10
+msgid "Services"
+msgstr ""
+
+#: includes/gc_service.php:11
+msgid "Service"
+msgstr ""
+
+#: includes/gc_service.php:48
+msgctxt "taxonomy general name"
+msgid "Service types"
+msgstr ""
+
+#: includes/gc_service.php:49
+msgctxt "taxonomy singular name"
+msgid "Service type"
+msgstr ""
+
+#: includes/gc_service.php:50
+msgid "Search Service Type"
+msgstr ""
+
+#: includes/gc_service.php:51
+msgid "Popular Service Types"
+msgstr ""
+
+#: includes/gc_service.php:52
+msgid "All Service types"
+msgstr ""
+
+#: includes/gc_service.php:55
+msgid "Edit Type"
+msgstr ""
+
+#: includes/gc_service.php:56
+msgid "Update Type"
+msgstr ""
+
+#: includes/gc_service.php:57
+msgid "Add New Service Type"
+msgstr ""
+
+#: includes/gc_service.php:58
+msgid "New Service Type"
+msgstr ""
+
+#: includes/gc_service.php:59
+msgid "Separate services with commas"
+msgstr ""
+
+#: includes/gc_service.php:60
+msgid "Add or remove services"
+msgstr ""
+
+#: includes/gc_service.php:61
+msgid "Choose from the most used services"
+msgstr ""
+
+#: includes/gc_service.php:65
+msgid "Service Type"
+msgstr ""
+
+#: options.php:14 options.php:15
+msgid "Recurrence"
+msgstr ""
+
+#: page-home.php:89
+msgid "More events"
+msgstr ""
+
+#: page.php:45
+msgid "Test EN"
+msgstr ""
+
+#: template-parts/event/event.php:105
+msgid "Back"
+msgstr ""
+
+#: template-parts/event/event.php:134
+msgid "descover"
+msgstr ""
+
+#: template-parts/event/event.php:159
+msgid "get directions"
+msgstr ""
+
+#: template-parts/event/event.php:173
+msgid "add to calendar"
+msgstr ""
+
+#: template-parts/event/event.php:262
+msgid "next dates to come"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Gospel Center City 2018"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://gospel-center.org"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Template for Gospel Center City 2018"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Yoann Gern"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://gerny-media.ch"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Calendar */ ?>"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Summary */ ?>"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Team */ ?>"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Homepage */ ?>"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Weekend */ ?>"
+msgstr ""
