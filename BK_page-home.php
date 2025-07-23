@@ -4,39 +4,31 @@
 
 <section id="content">
 
-<?php if (get_field('bg_image')): ?>
+    <?php if (get_field('bg_image')): ?>
 
-    <article class="title <?php if (get_field('alert-banner_show')) { echo 'alert-banner'; } ?>">
-        <div class="image"
-             style="background-image: url('<?php echo get_field('bg_image')['sizes']['full_hd']; ?>')">
+        <article class="title <?php if (get_field('alert-banner_show')) {
+            echo 'alert-banner';
+        } ?>">
+            <div class="image"
+                 style="background-image: url('<?php echo get_field('bg_image')['sizes']['full_hd']; ?>')"></div>
+            <div class="title">
 
-            <?php if (get_field('bg_video')): ?>
-                <video class="background-video" autoplay muted loop playsinline>
-                    <source src="<?php echo esc_url(get_field('bg_video')); ?>" type="video/mp4">
-                </video>
-            <?php endif; ?>
+                <h1 class="page-title">
+                    <span class="txt"><?php echo get_field('title'); ?></span>
+                    <span class="underline"></span>
+                </h1>
 
-        </div>
+                <?php print_buttons('weekend_buttons', $_POST) ?>
 
-        <div class="title">
+            </div>
 
-            <h1 class="page-title">
-                <span class="txt"><?php echo get_field('title'); ?></span>
-                <span class="underline"></span>
-            </h1>
+            <div class="footer">
+                <a href="#events"></a>
+            </div>
 
-            <?php print_buttons('weekend_buttons', $_POST) ?>
+        </article>
 
-        </div>
-
-        <div class="footer">
-            <a href="#events"></a>
-        </div>
-
-    </article>
-
-<?php endif; ?>
-
+    <?php else: ?>
 
         <div class="spacer"></div>
 

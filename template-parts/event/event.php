@@ -64,7 +64,6 @@
 
 	$pres_page = get_field_or_parent( 'presentation_page', $post, 'gc_eventcategory' );
 
-
 	if ( get_field_or_parent( 'bg_image', $post, 'gc_eventcategory' ) ) {
 		$bg_image = get_field_or_parent( 'bg_image', $post, 'gc_eventcategory' );
 	} else {
